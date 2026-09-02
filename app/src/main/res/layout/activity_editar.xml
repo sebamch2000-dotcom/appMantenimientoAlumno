@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F5F5F5"
-    tools:context=".NuevoActivity">
+    tools:context=".EditarActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -31,12 +31,12 @@
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp"
                 android:paddingBottom="16dp"
-                android:paddingTop="60dp">
+                android:paddingTop="56dp">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/app_name"
+                    android:text="SENATI 2026"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"
                     android:textStyle="bold" />
@@ -45,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
-                    android:text="@string/titulo_nuevo_registro"
+                    android:text="Editar Registro"
                     android:textColor="@android:color/white"
                     android:textSize="22sp"
                     android:textStyle="bold" />
@@ -54,7 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="@string/subtitulo_nuevo_registro"
+                    android:text="Modifique los datos del alumno"
                     android:textColor="#CCCCCC"
                     android:textSize="13sp" />
             </LinearLayout>
@@ -211,12 +211,12 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
-                android:id="@+id/BtnGuarda"
+                android:id="@+id/btnActualizar"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginBottom="24dp"
                 android:backgroundTint="@android:color/black"
-                android:text="@string/btn_guardar"
+                android:text="Actualizar Registro"
                 android:textColor="@android:color/white"
                 android:textSize="16sp"
                 android:textStyle="bold" />
