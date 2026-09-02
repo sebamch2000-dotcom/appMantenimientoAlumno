@@ -1,0 +1,22 @@
+<resources>
+    <!-- Existentes -->
+    <string name="app_name">SENATI 2026</string>
+    <string name="hint_nombre">Nombres y Apellidos</string>
+    <string name="hint_telefono">Teléfono / Celular</string>
+    <string name="hint_correo_electronico">Correo Institucional / Personal</string>
+    <string name="btn_guardar">Guardar Registro</string>
+    <string name="menu_nuevo">Nuevo Registro</string>
+
+    <!-- Título y subtítulo del encabezado -->
+    <string name="titulo_nuevo_registro">Registro de Alumnos</string>
+    <string name="subtitulo_nuevo_registro">Ingrese los datos del estudiante SENATI</string>
+
+    <!-- Campos nuevos -->
+    <string name="hint_dni">Número de DNI</string>
+    <string name="hint_codigo_id">Código de ID / Matrícula</string>
+    <string name="hint_carrera">Carrera Profesional</string>
+    <string name="hint_semestre">Semestre Acuático / Académico</string>
+    <string name="hint_zonal_sede">Zonal / Sede SENATI</string>
+    <string name="hint_fecha_ingreso">Fecha de Ingreso</string>
+    <string name="hint_promedio">Promedio Ponderado / Nota</string>
+</resources>
