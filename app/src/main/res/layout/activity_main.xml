@@ -8,14 +8,17 @@
     android:background="#F5F5F5"
     tools:context=".MainActivity">
 
-    <!-- Encabezado superior en color NEGRO -->
+    <!-- Encabezado superior -->
     <LinearLayout
         android:id="@+id/headerLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@android:color/black"
         android:orientation="vertical"
-        android:padding="20dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,7 +26,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/app_name"
+            android:text="SENATI 2026"
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:textStyle="bold" />
@@ -46,13 +49,14 @@
             android:textSize="13sp" />
     </LinearLayout>
 
-    <!-- Tarjeta central contenedora -->
     <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_margin="24dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="6dp"
+        android:layout_margin="32dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="#F0E6F7"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,34 +67,24 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="32dp">
 
             <ImageView
-                android:layout_width="72dp"
-                android:layout_height="72dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_marginBottom="16dp"
-                android:contentDescription="Icono Base de Datos"
                 android:src="@android:drawable/ic_menu_save"
-                app:tint="@android:color/black" />
+                app:tint="#666666" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
                 android:text="Base de Datos SQLite"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="24dp"
-                android:gravity="center"
-                android:textColor="#666666"
-                android:textSize="13sp" />
-
-            <!-- Botón estilizado -->
             <Button
                 android:id="@+id/btnCrear"
                 android:layout_width="match_parent"
@@ -98,10 +92,34 @@
                 android:backgroundTint="@android:color/black"
                 android:text="Crear Base de Datos"
                 android:textColor="@android:color/white"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:cornerRadius="28dp" />
 
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabVer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:backgroundTint="@android:color/black"
+        android:contentDescription="Ver Alumnos"
+        android:src="@android:drawable/ic_menu_view"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tint="@android:color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabNuevo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:backgroundTint="@android:color/black"
+        android:contentDescription="Nuevo Alumno"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@android:color/white" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

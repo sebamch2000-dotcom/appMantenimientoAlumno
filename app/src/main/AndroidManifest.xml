@@ -25,6 +25,12 @@
             android:name=".NuevoActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ListarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditarActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
